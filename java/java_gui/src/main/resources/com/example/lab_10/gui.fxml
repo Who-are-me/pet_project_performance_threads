@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_10.ProgramController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="257.0" prefWidth="646.0" style="-fx-background-color: #1E1E1E;" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="262.0" layoutY="130.0" style="-fx-content-display: fff;" text="Result" textFill="WHITE" />
+            <Label layoutX="263.0" layoutY="181.0" prefHeight="18.0" prefWidth="138.0" text="Time (miliseconds)" textFill="WHITE" />
+            <TextField fx:id="result" layoutX="398.0" layoutY="126.0" prefHeight="26.0" prefWidth="216.0" style="-fx-background-color: #656567;" />
+            <TextField fx:id="time" layoutX="398.0" layoutY="177.0" prefHeight="26.0" prefWidth="216.0" style="-fx-background-color: #656567;" />
+            <Label layoutX="241.0" layoutY="66.0" text="Output" textFill="#0b84ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="244.0" prefWidth="235.0" style="-fx-background-color: #363636;">
+               <effect>
+                  <DropShadow />
+               </effect>
+                <children>
+                    <Label layoutX="20.0" layoutY="131.0" text="Threads" textFill="WHITE" />
+                    <Label layoutX="20.0" layoutY="184.0" text="Steps on thread" textFill="WHITE" />
+                    <TextField fx:id="threads" layoutX="129.0" layoutY="127.0" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #656567;" />
+                    <TextField fx:id="steps" layoutX="129.0" layoutY="180.0" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #656567;" />
+                    <Label layoutX="15.0" layoutY="64.0" text="Input" textFill="#0b84ff">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <Separator layoutX="23.0" layoutY="158.0" prefHeight="3.0" prefWidth="201.0" />
+                    <Separator layoutX="23.0" layoutY="211.0" prefHeight="3.0" prefWidth="201.0" />
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-1.0" layoutY="-8.0" prefHeight="44.0" prefWidth="647.0" style="-fx-background-color: #363636;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                   <Button fx:id="run" layoutX="11.0" layoutY="13.0" mnemonicParsing="false" onAction="#onRunButtonClick" prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: #656567;" text="Run" textFill="WHITE" />
+                   <Label layoutX="606.0" layoutY="17.0" text="v 0.1" textFill="#aeaeae" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="252.0" layoutY="158.0" prefHeight="3.0" prefWidth="368.0" />
+            <Separator layoutX="252.0" layoutY="210.0" prefHeight="3.0" prefWidth="368.0" />
+<!--            <Label fx:id="msg" layoutX="241.0" layoutY="226.0" prefHeight="18.0" prefWidth="368.0" textFill="WHITE"/>-->
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
